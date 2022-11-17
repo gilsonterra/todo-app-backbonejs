@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce BackboneJS</title>
+    <link rel="stylesheet" href="dist/bundle.min.css" />
+  </head>
+  <body class="container">
+    <header class="header">
+      <h1>App Cards</h1>
+    </header>
+
+    <div class="content">
+      <main class="main">
+        <div class="tasks-new">
+          <input class="form-control title-input" placeholder="Titulo" />
+          <input class="form-control description-input" placeholder="Descrição" />
+          <button class="btn btn-primary add-task">Adicionar</button>
+        </div>
+        <div class="tasks-list"></div>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <span>Desenvolvido por Gilson Terra com</span> <img alt="backbone logo" height="20px" src="src/img/backbone.png"/>
+    </footer>
+
+    <script type="text/template" class="tasks-list-template">
+      <div class="card">
+        <span class="label-title"><%= title %></span>
+        <div class="label-description"><%= description %></div>
+        <div class="actions">
+          <button class="btn btn-warning edit-task">Alterar</button> 
+          <button class="btn btn-danger delete-task">Remover</button>
+          <button class="btn btn-success update-task" style="display:none">Atualizar</button> 
+          <button class="btn btn-danger cancel" style="display:none">Cancel</button>
+        </div>
+      </div>
+    </script>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/backbone/backbone-min.js"></script>
+    <script src="dist/bundle.min.js"></script>
+  </body>
+</html>
