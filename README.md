@@ -1,5 +1,10 @@
 # TODO APP com BackboneJS
 
+## DEMO
+http://gilsonterra-backbone.surge.sh
+
+## Instalação local
+
 1- Primeiro instale as dependencias NPM
 
 ```
